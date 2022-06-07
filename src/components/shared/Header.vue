@@ -37,7 +37,7 @@
 <style scoped lang="scss">
 header {
   height: 96px;
-  background: rebeccapurple;
+  background: #fff;
 }
 .header-wrapper {
   display: grid;
