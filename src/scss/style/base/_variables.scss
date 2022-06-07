@@ -1,0 +1,25 @@
+:root {
+    // Spacing
+    --gap: 25px;
+    --gutter: 20px;
+    --gap-section: 40px;
+    --gap-content: 10px;
+    --gap-six: 6px;
+    --gap-margin-tablet: 30px;
+
+
+    // Fonts
+    --font-roboto: "Roboto", sans-serif;
+    --font-baskerville: "Libre Baskerville", serif;
+
+    --font-poppins: "Poppins", sans-serif;
+    // Headings
+
+    --h2-color: black;
+}
+
+// Responsive breakpoints
+$mobile: 480px;
+$tablet-portrait: 768px;
+$tablet: 1024px;
+$desktop: 1345px;
