@@ -21,12 +21,12 @@
         </ul>
       </nav>
       <div>
-        <ul>
+        <ul class="login-wrapper">
           <li>
-            <a href="#">Se connecter</a>
+            <a class="btn-connect" href="#">Se connecter</a>
           </li>
           <li>
-            <a href="#">S'inscrire</a>
+            <a class="signup" href="#">S'inscrire</a>
           </li>
         </ul>
       </div>
@@ -39,6 +39,7 @@ header {
   height: 96px;
   background: #fff;
 }
+
 .header-wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -46,6 +47,11 @@ header {
   margin: 0 auto;
   align-items: center;
   height: 100%;
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .header-listing-wrapper {
   ul {
@@ -65,7 +71,53 @@ header {
         align-items: center;
         color: #00274b;
         text-decoration: none;
+        margin-right: 40px;
       }
+    }
+  }
+}
+.login-wrapper {
+  display: flex;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    .btn-connect {
+      font-family: RalewayRegular, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(16 / 14 * 100%);
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #00274b;
+      margin-right: 40px;
+      text-decoration: none;
+    }
+    .signup {
+      background: #ff978a;
+      border-radius: 48px;
+      padding: 0 28px;
+      min-height: 48px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 0 10px 0 0;
+      transition: background-color 0.5s linear;
+      font-family: Raleway, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(24 / 16 * 100%);
+      color: #00274b;
+      text-decoration: none;
     }
   }
 }

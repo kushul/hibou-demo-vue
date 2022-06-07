@@ -20,7 +20,7 @@ export default {
 <style lang="scss">
 :root {
   // Spacing
-  --container-width: 1024px;
+  --container-width: 1240px;
   --gap: 25px;
   --gutter: 20px;
   --gap-section: 40px;
