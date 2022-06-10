@@ -32,6 +32,9 @@ export default defineNuxtConfig({
             { property: 'og:image:width', content: '1200' },
             { property: 'og:image:height', content: '900' },
         ],
+        link: [
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,700;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,800&display=swap' },
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap' }]
     },
     router: {
         // https://router.vuejs.org/api/#routeroptions

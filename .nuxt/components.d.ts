@@ -2,8 +2,11 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'Header': typeof import("../components/Header.vue")['default'],
+    'HomeCarousel': typeof import("../components/HomeCarousel.vue")['default'],
+    'HomeFeaturesBlock': typeof import("../components/HomeFeaturesBlock.vue")['default'],
     'HomeOfferBlock': typeof import("../components/HomeOfferBlock.vue")['default'],
     'HomeServicesListing': typeof import("../components/HomeServicesListing.vue")['default'],
+    'MetaTag': typeof import("../components/MetaTag.vue")['default'],
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default'],
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default'],
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default'],
@@ -11,8 +14,11 @@ declare module 'vue' {
     'ServerPlaceholder': typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default'],
     'NuxtLink': typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
     'LazyHeader': typeof import("../components/Header.vue")['default'],
+    'LazyHomeCarousel': typeof import("../components/HomeCarousel.vue")['default'],
+    'LazyHomeFeaturesBlock': typeof import("../components/HomeFeaturesBlock.vue")['default'],
     'LazyHomeOfferBlock': typeof import("../components/HomeOfferBlock.vue")['default'],
     'LazyHomeServicesListing': typeof import("../components/HomeServicesListing.vue")['default'],
+    'LazyMetaTag': typeof import("../components/MetaTag.vue")['default'],
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default'],
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default'],
     'LazyNuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default'],
@@ -22,8 +28,11 @@ declare module 'vue' {
   }
 }
 export const Header: typeof import("../components/Header.vue")['default']
+export const HomeCarousel: typeof import("../components/HomeCarousel.vue")['default']
+export const HomeFeaturesBlock: typeof import("../components/HomeFeaturesBlock.vue")['default']
 export const HomeOfferBlock: typeof import("../components/HomeOfferBlock.vue")['default']
 export const HomeServicesListing: typeof import("../components/HomeServicesListing.vue")['default']
+export const MetaTag: typeof import("../components/MetaTag.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -31,8 +40,11 @@ export const ClientOnly: typeof import("../node_modules/nuxt/dist/app/components
 export const ServerPlaceholder: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
 export const NuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
 export const LazyHeader: typeof import("../components/Header.vue")['default']
+export const LazyHomeCarousel: typeof import("../components/HomeCarousel.vue")['default']
+export const LazyHomeFeaturesBlock: typeof import("../components/HomeFeaturesBlock.vue")['default']
 export const LazyHomeOfferBlock: typeof import("../components/HomeOfferBlock.vue")['default']
 export const LazyHomeServicesListing: typeof import("../components/HomeServicesListing.vue")['default']
+export const LazyMetaTag: typeof import("../components/MetaTag.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
 export const LazyNuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']

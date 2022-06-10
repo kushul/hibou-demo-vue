@@ -21,52 +21,50 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      services: [
-        {
-          title: "Management de transition",
-          description: "Gestion d’un département IT avec un DSI / CIO / CTO",
-        },
-        {
-          title: "Devops",
-          description: "Collaboration des développeurs et de l’Infrastructure",
-        },
-        {
-          title: "Big data",
-          description:
-            "Accès, analyse et partage de l’information au sein des organisations",
-        },
-        {
-          title: "DBA",
-          description: "Administration de l’ensemble des bases de données",
-        },
-        {
-          title: "Cloud",
-          description: "Gestion du Cloud sur AWS et Microsoft Azure",
-        },
-        {
-          title: "SAP",
-          description: "Déploiement de l’ensemble des modules SAP",
-        },
-        {
-          title: "PMO",
-          description: "Processus de gestion de projet",
-        },
-        {
-          title: "MOA",
-          description: "Compréhension des enjeux, spécications des besoins",
-        },
-        {
-          title: "Développement",
-          description: "Gestion des applications et des Appss",
-        },
-      ],
-    };
+<script setup lang="ts">
+interface IService {
+  title: string;
+  description: string;
+}
+const services: IService[] = [
+  {
+    title: "Management de transition",
+    description: "Gestion d’un département IT avec un DSI / CIO / CTO",
   },
-};
+  {
+    title: "Devops",
+    description: "Collaboration des développeurs et de l’Infrastructure",
+  },
+  {
+    title: "Big data",
+    description:
+      "Accès, analyse et partage de l’information au sein des organisations",
+  },
+  {
+    title: "DBA",
+    description: "Administration de l’ensemble des bases de données",
+  },
+  {
+    title: "Cloud",
+    description: "Gestion du Cloud sur AWS et Microsoft Azure",
+  },
+  {
+    title: "SAP",
+    description: "Déploiement de l’ensemble des modules SAP",
+  },
+  {
+    title: "PMO",
+    description: "Processus de gestion de projet",
+  },
+  {
+    title: "MOA",
+    description: "Compréhension des enjeux, spécications des besoins",
+  },
+  {
+    title: "Développement",
+    description: "Gestion des applications et des Appss",
+  },
+];
 </script>
 
 <style lang="scss" scoped>

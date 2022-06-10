@@ -7,7 +7,7 @@ $mobile: 480px;
 :root {
   // Spacing
   --container-width: 1240px;
-  --gap: 25px;
+  --gap: 20px;
   --gutter: 20px;
   --gap-section: 40px;
   --gap-content: 10px;
@@ -15,6 +15,9 @@ $mobile: 480px;
   --gap-margin-tablet: 30px;
 
   /* Colours */
+  --primary: #ff7d6d;
+  --text-color: #00274b;
+
   --blue: #3eb0ef;
   --purple: #ad26b4;
   --red: #f05230;
@@ -31,9 +34,8 @@ $mobile: 480px;
   --gutter: 15px;
 
   //fonts
-  --font-roboto: "Roboto", sans-serif;
-
-  --font-oswald: 'Oswald', sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+  --font-grotesque: 'Darker Grotesque', sans-serif;
   ;
 
   --header-height: 250px;

@@ -10,6 +10,8 @@
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
-    "sass": "^1.52.2"
+    "sass": "^1.52.2",
+    "swiper": "^8.2.3",
+    "vue-awesome-swiper": "^5.0.1"
   }
 }
