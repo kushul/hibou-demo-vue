@@ -43,66 +43,20 @@ $mobile: 480px;
 
 }
 
-.dark-mode {
-  --bg-background-primary: #00162B;
-  --bg-background-secondary: rgba(1, 15, 28, 0.5);
-  --bg-background-invert: #fff;
-  --text-copy-primary: #e2e8f0;
-  --text-copy-invert: #1A202C;
-  --border-copy-invert: #1A202C;
-  --text-copy-secondary: #a9c7df;
-  --green: #48BB78;
+@media screen and (max-width: 1240px) {
+  :root {
+    --container-width: 940px;
+  }
 }
 
-.light-mode {
-  --bg-background-primary: #EDF2F7;
-  --bg-background-secondary: rgba(191, 191, 191, 0.3);
-  --bg-background-invert: #1A202C;
-  --text-copy-primary: #2D3748;
-  --text-copy-invert: #fff;
-  --border-copy-invert: rgb(165, 154, 154);
-  --text-copy-secondary: #2A4365;
-  --green: #38A169;
+@media screen and (max-width: $tablet) {
+  :root {
+    --container-width: 600px;
+  }
 }
 
-.sepia-mode {
-  --bg-background-primary: #f1e7d0;
-  --bg-background-secondary: rgba(120, 60, 0, .4);
-  --bg-background-invert: #1A202C;
-  --text-copy-primary: #744210;
-  --text-copy-invert: #fff;
-  --border-copy-invert: #fff;
-  --text-copy-secondary: #9C4221;
-  --green: #2F855A;
+@media screen and (max-width: 600px) {
+  :root {
+    --container-width: 100%;
+  }
 }
-
-
-// .theme-light {
-
-//   // background
-//   --bg-background-primary: #f7fafc;
-//   --bg-background-secondary: #f7fafc;
-//   --bg-background-invert: #000;
-
-//   // text
-//   --text-copy-primary: #000;
-//   --text-copy-invert: #fff;
-// }
-
-// .theme-dark {
-//   --bg-background-primary: #0d2234;
-//   --bg-background-secondary: #102C44;
-//   --bg-background-invert: #fff;
-
-//   --text-copy-primary: #fff;
-//   --text-copy-invert: #2D3748;
-// }
-
-// .theme-sepia {
-//   --bg-background-primary: #FFFAF0;
-//   --bg-background-secondary: #FFFAF0;
-//   --bg-background-invert: #000;
-
-//   --text-copy-primary: #433422;
-//   --text-copy-invert: #fff;
-// }

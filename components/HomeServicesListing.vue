@@ -2,8 +2,8 @@
   <div class="specs-container">
     <div class="specs-wrapper">
       <div class="specs-header">
-        <h3>Nos Metiers</h3>
-        <h1>Chez LeHibou rencontrez des spécialistes</h1>
+        <h3 class="tagline">Nos Metiers</h3>
+        <h1 class="title">Chez LeHibou rencontrez des spécialistes</h1>
       </div>
       <div class="specs-boxes">
         <div
@@ -88,19 +88,6 @@ const services: IService[] = [
 
   .specs-header {
     text-align: center;
-
-    h3 {
-      margin-bottom: 17px;
-      text-transform: uppercase;
-      color: #ff7d6d;
-      font-size: 21px;
-    }
-
-    h1 {
-      color: #00274b;
-      font-size: 34px;
-      margin-bottom: 20px;
-    }
   }
 
   .specs-boxes {

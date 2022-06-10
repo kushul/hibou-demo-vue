@@ -1,50 +1,55 @@
 <template>
   <section class="banner">
-    <section class="banner-box">
-      <img
-        class="banner-box-img"
-        src="https://www.lehibou.com/bundles/app/images/first/random-man.jpg"
-        alt="person-image"
-      />
-      <div class="banner-box-text">
-        <h1 class="banner-box-text__heading">Vous êtes un grand compte ?</h1>
-        <p class="banner-box-text__paragraph">
-          Vous souhaitez référencer une plateforme freelance ? Découvrez les
-          offres Corporate LeHibou !
-        </p>
-        <button class="banner-box-text__button">
-          <a href="#">Découvrir les offres Corporate</a>
-        </button>
+    <div class="banner-box">
+      <div class="box-wrapper">
+        <img
+          class="banner-box-img"
+          src="https://www.lehibou.com/bundles/app/images/first/random-man.jpg"
+          alt="person-image"
+        />
+        <div class="banner-box-text">
+          <h1 class="banner-box-text__heading">Vous êtes un grand compte ?</h1>
+          <p class="banner-box-text__paragraph">
+            Vous souhaitez référencer une plateforme freelance ? Découvrez les
+            offres Corporate LeHibou !
+          </p>
+          <button class="banner-box-text__button">
+            <a href="#">Découvrir les offres Corporate</a>
+          </button>
+        </div>
       </div>
-    </section>
+    </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
 .banner {
-  padding: 100px 0 160px 0;
-  //display: -ms-flexbox;
   display: flex;
-  //-ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
   box-sizing: content-box;
+  position: relative;
+  padding: calc(var(--gap) * 2) 0;
+}
+
+.banner-box {
+  padding: 70px;
   position: relative;
 
   &::after {
     content: url("https://www.lehibou.com/bundles/app/images/first/yellow-thin-ellipse.svg");
     position: absolute;
-    bottom: 100px;
-    right: -3rem;
+    bottom: 0;
+    right: 0;
   }
 }
 
-.banner-box {
+.box-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 4rem;
   background: #00274b;
-  padding: 105px 60px;
+  width: var(--container-width);
   //max-height: 480px;
   border-radius: 12px;
   margin: 0 auto;
@@ -54,6 +59,7 @@
   color: white;
   width: var(--container-width);
   margin: 0 auto;
+  padding: 50px;
 
   .banner-box-img {
     width: 100%;
@@ -115,11 +121,13 @@
 @media only screen and (max-width: 1024px) {
   /* For mobile phones: */
   .banner {
-    padding: 90px;
-
     .banner-box {
+      padding: 40px;
+    }
+    .box-wrapper {
       grid-template-columns: 1fr;
       max-height: inherit;
+      padding: 20px;
 
       .banner-box-text {
         display: flex;

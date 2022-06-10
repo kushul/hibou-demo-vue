@@ -6,7 +6,7 @@
       <swiper
         :pagination="true"
         :navigation="true"
-        :modules="modules"
+        :modules="[Pagination, Navigation]"
         class="profile-carousel"
         :slides-per-view="4"
         :allowTouchMove="false"
@@ -56,9 +56,11 @@
     </div>
   </div>
 </template>
-<script>
+
+<script setup>
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation, Pagination } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -67,19 +69,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // import required modules
-import { Navigation, Pagination } from "swiper";
-
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    return {
-      modules: [Navigation, Pagination],
-    };
-  },
-};
 </script>
 
 <style lang="scss" scoped>
