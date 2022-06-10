@@ -1,5 +1,6 @@
 <template>
   <div class="carousel-container">
+    {{ data }}
     <div class="carousel-wrapper">
       <h3 class="tagline">Specialists</h3>
       <h1 class="title">Specialists on the platform</h1>
@@ -68,7 +69,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// import required modules
+const { data } = await useFetch("api/db.json");
 </script>
 
 <style lang="scss" scoped>
